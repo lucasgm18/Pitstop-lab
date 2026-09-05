@@ -1,0 +1,39 @@
+# Git Ignore - PitStop Core Laboratory
+
+# Environment files & Secrets (CRITICAL: Never commit credentials)
+.env
+*.env
+.env.*
+.env.local
+docker/.env
+!.env.example
+!*.env.example
+
+# PostgreSQL / Persistent Database Data
+pitstop_pgdata/
+*.log
+*.sql.bak
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE & OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
